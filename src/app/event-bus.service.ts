@@ -4,6 +4,8 @@ import { Observable } from 'rxjs/Observable'
 import { Observer } from 'rxjs/Observer'
 import { Subject } from 'rxjs/Subject'
 
+import 'rxjs/add/operator/filter'
+
 export const APP_TITLE_CHANGE_EVENT_TYPE = 'appTitleChange';
 
 @Injectable()
