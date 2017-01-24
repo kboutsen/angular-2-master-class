@@ -17,10 +17,13 @@ export class EventBusService {
   }
 
   observe(eventType: string): Observable<any> {
-    return this.messages$.filter(args => args.type === eventType).map(args => args.data);
+    return this.messages$
+               .filter(args => args.type === eventType)
+               .map(args => args.data);
   }
 }
-  class EventBusArgs {
+
+class EventBusArgs {
     type: string;
     data: any;
 }
