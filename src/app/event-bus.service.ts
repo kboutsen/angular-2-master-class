@@ -25,7 +25,7 @@ export class EventBusService {
   }
 }
 
-class EventBusArgs {
+interface EventBusArgs {
     type: string;
     data: any;
 }
