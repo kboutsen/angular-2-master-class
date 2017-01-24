@@ -9,7 +9,7 @@ import  { Contact } from '../models/contact'
   templateUrl: './contacts-detail-view.component.html'
 })
 export class ContactsDetailViewComponent implements OnInit {
- private contact: Contact;
+  private contact: Contact;
   constructor(private route: ActivatedRoute, private router: Router, private contactsService: ContactsService) { }
 
   ngOnInit() {

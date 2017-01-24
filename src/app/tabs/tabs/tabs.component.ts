@@ -18,7 +18,7 @@ export class TabsComponent implements OnInit {
     this.tabs.push(tab);
 
     if (this.tabs.length == 1) {
-      tab.selected = true;
+      this.select(tab);
     }
   }
 
