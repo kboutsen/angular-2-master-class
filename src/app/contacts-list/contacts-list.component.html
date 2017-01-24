@@ -1,0 +1,15 @@
+<md-toolbar>
+  <md-input-container dividerColor="accent" class="trm-search-container">
+    <input md-input type="text" (input)="terms$.next($event.target.value);">
+  </md-input-container>
+  <md-icon color="accent">search</md-icon>
+</md-toolbar>
+
+<md-nav-list>
+  <a md-list-item 
+    [routerLink]="['/contact', contact.id]"
+    *ngFor="let contact of contacts | async; trackBy:contactTrackBy">
+    <img md-list-avatar [src]="contact.image" alt="Picture of {{contact.name}}">
+    <h3 md-line>{{contact.name}}</h3>
+  </a>
+</md-nav-list>
