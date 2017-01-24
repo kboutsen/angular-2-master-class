@@ -33,7 +33,7 @@ export class ContactsService {
   }
 
   search(terms: Observable<string>, debounceTime = 400) : Observable<Array<Contact>> {
-      return terms.debounceTime(400)
+      return terms.debounceTime(debounceTime)
                   .distinctUntilChanged()
                   .switchMap(term => this.rawSearch(term));
   }
