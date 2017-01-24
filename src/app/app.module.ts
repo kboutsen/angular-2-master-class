@@ -14,9 +14,10 @@ import { APP_ROUTES } from './app.routes';
 import { ContactsDetailComponent } from './contacts-detail/contacts-detail.component';
 import { MASTER_CLASS_DI_CONFIG, APP_CONFIG_TOKEN } from './app.config';
 import { ContactsEditorComponent } from './contacts-editor/contacts-editor.component';
+import { ContactsDetailViewComponent } from './contacts-detail-view/contacts-detail-view.component';
 
 @NgModule({
-  declarations: [ContactsAppComponent, ContactsListComponent, ContactsDetailComponent, ContactsEditorComponent],
+  declarations: [ContactsAppComponent, ContactsListComponent, ContactsDetailComponent, ContactsEditorComponent, ContactsDetailViewComponent],
   imports: [
     BrowserModule,
     MaterialModule.forRoot(),
