@@ -17,7 +17,7 @@ export class ContactsDetailViewComponent implements OnInit {
     this.contactsService.getContact(contactId).subscribe(contact => this.contact = contact);
   }
 
-  navigateToEditor () {
+  navigateToEditor (contact: Contact) {
     this.router.navigate(['edit'], {
       relativeTo: this.route
     });
