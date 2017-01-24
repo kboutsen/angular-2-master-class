@@ -15,9 +15,11 @@ import { ContactsDetailComponent } from './contacts-detail/contacts-detail.compo
 import { MASTER_CLASS_DI_CONFIG, APP_CONFIG_TOKEN } from './app.config';
 import { ContactsEditorComponent } from './contacts-editor/contacts-editor.component';
 import { ContactsDetailViewComponent } from './contacts-detail-view/contacts-detail-view.component';
+import { TabComponent } from './tabs/tab/tab.component';
+import { TabsComponent } from './tabs/tabs/tabs.component';
 
 @NgModule({
-  declarations: [ContactsAppComponent, ContactsListComponent, ContactsDetailComponent, ContactsEditorComponent, ContactsDetailViewComponent],
+  declarations: [ContactsAppComponent, ContactsListComponent, ContactsDetailComponent, ContactsEditorComponent, ContactsDetailViewComponent, TabComponent, TabsComponent],
   imports: [
     BrowserModule,
     MaterialModule.forRoot(),
@@ -28,7 +30,7 @@ import { ContactsDetailViewComponent } from './contacts-detail-view/contacts-det
   ],
   bootstrap: [ContactsAppComponent],
   providers: [
-    ContactsService, 
+    ContactsService,
     {provide: APP_CONFIG_TOKEN, useValue: MASTER_CLASS_DI_CONFIG }
   ]
 })
